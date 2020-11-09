@@ -9,9 +9,12 @@
 }
 .grid2{
     grid-area: header;
+    background-color: aqua;
+    float: right;
 }
 .grid3{
     grid-area: navigation;
+    background-color: blue;
 }
 .grid4{
     grid-area: main;
@@ -25,6 +28,7 @@ nav{
 .note{
     height: 40px;
     width: 40px;
+    float: right;
 }
 .a{
     float: left;
@@ -37,6 +41,12 @@ nav{
 }
 .main{
     display: grid;
+}
+.headline{
+    float: left;
+}
+.main-header-search{
+    float: left;
 }
 @media(min-width:768px){
     .main{

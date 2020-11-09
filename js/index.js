@@ -11,8 +11,8 @@ alertBanner.innerHTML=
 
 alertBanner.addEventListener('click', e => {
 const element = e.target;
-if (element.classlist.conains("alert-banner-close")){
-alert.style.display= "none"
+if (element.classList.contains("alert-banner-close")){
+alertBanner.style.display= "none"
 }
 });
 let trafficData = {

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8"/>
 <head>
+    <meta charset="utf-8">
+    <title>Webapp Dashboard</title>
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/Chart.css" rel="stylesheet">
-    <link href="css/Chart.min.css" rel="stylesheep">
+    <link href="css/Chart.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="grid">
@@ -20,69 +21,69 @@
     <div class="alert" id="alert">
 
     </div>
-    <img class="note" src="icons/icon-bell.svg">
-    <img class="note" src="images/member-1.jpg">
+    <img alt="notifications" class="note" src="icons/icon-bell.svg">
+    <img alt="member 1" class="note" src="images/member-1.jpg">
     Selena Gonzales
 </header>
 </div>
 <div class="grid3">
 <nav>
     
-    <div class="a"><a class="svg1" href="#Dashboard"><img class="svg" src="icons/icon-dashboard.svg"></a></div>
-    <div class="a"><a class="svg2" href="Members"><img class="svg" src="icons/icon-members.svg"></a></div>
-    <div class="a"><a class="svg3" href="Visits"><img class="svg" src="icons/icon-visits.svg"></a></div>
-    <div class="a"><a class="svg4" href="Settings"><img class="svg" src="icons/icon-settings.svg"></a></div>
+    <div class="a"><a class="svg1" href="#Dashboard"><img alt="icon dashboard" class="svg" src="icons/icon-dashboard.svg"></a></div>
+    <div class="a"><a class="svg2" href="Members"><img alt="icon members" class="svg" src="icons/icon-members.svg"></a></div>
+    <div class="a"><a class="svg3" href="Visits"><img alt="icon visits" class="svg" src="icons/icon-visits.svg"></a></div>
+    <div class="a"><a class="svg4" href="Settings"><img alt="icon settings" class="svg" src="icons/icon-settings.svg"></a></div>
 </nav>
 </div>
 <div class="grid4">
 <div class="main">
     <section class="traffic">
-        <div​ class="traffic-header"​>
-            <h3​>​Traffic</h3>​​
-            <ul​ class="traffic-nav">
-                <li​ class="traffic-nav-link"​>​Hourly​</li​>​
-                <li​ class="traffic-nav-link"​>​Daily​</li​>​
-                <li​ class="traffic-nav-link active"​>​Weekly​</li>​
-                <li​ class="traffic-nav-link"​>​Monthly​</li​>
-    ​       </ul>
+        <div class="traffic-header">
+            <h3>Traffic</h3>
+            <ul class="traffic-nav">
+                <li class="traffic-nav-link">Hourly</li>
+                <li class="traffic-nav-link">Daily</li>
+                <li class="traffic-nav-link active">Weekly</li>
+                <li class="traffic-nav-link">Monthly</li>
+          </ul>
     </div>
-        <div class="widget-container-full"​>
-            ​<!-- element line graph will attach to -->​
+        <div class="widget-container-full">
+           <!-- element line graph will attach to -->
             <canvas id="traffic-chart"></canvas>
-        ​</div>
+       </div>
     
-    ​</section>
-    <section​ class="daily">
-        ​<h3​>Daily Traffic</h3​>​
+   </section>
+    <section class="daily">
+       <h3>Daily Traffic</h3>
     
-    <div​ class="widget-container-half">
+    <div class="widget-container-half">
     <canvas id="daily-chart"></canvas>
     </div>
     </section>
-    <section​ class="mobile">
-        ​<h3​>Mobile Traffic</h3​>​
+    <section class="mobile">
+       <h3>Mobile Traffic</h3>
     
-    <div​ class="widget-container-half">
+    <div class="widget-container-half">
     <canvas id="mobile-chart"></canvas>
 </div>
 </section>
-        <div class="social-container"​>​
+        <div class="social-container">
             <div class="social-image">
-            ​<!-- inline SVG not included for brevity -->
-            ​</div>
-            ​<div class="social-text"​>
-                ​<p>​Twitter​</p>​
-                <p>​10,345​</p>​
-            </div>​
-        </div>​
-        <!-- add two more social containers and child​elements for other social media items -->
-    ​</div>​
+           <!-- inline SVG not included for brevity -->
+           </div>
+           <div class="social-text">
+               <p>Twitter</p>
+                <p>10,345</p>
+            </div>
+        </div>
+        <!-- add two more social containers and childelements for other social media items -->
+   </div>
 </div>
 <section class="members">
     <h3>new members</h3>
 
     <div class="members-container">
-        <img src="images/Sept2018Profile.jpg" class="profile-image">
+        <img alt="member 2" src="images/member-2.jpg" class="profile-image">
         <div class="members-text">
         <p>Victoria Chambers</p>
         <a href="#">victoria.chambers80@example.com</a>
@@ -112,9 +113,8 @@
         </div>
     </section>
 </div>
-</div>
-<script type="text/javascript" src="js/chart.js"></script>
-<script type="text/javascript" src="js/chart.bundle.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/chart.bundle.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

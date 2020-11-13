@@ -48,6 +48,10 @@ nav{
 .main-header-search{
     float: left;
 }
+.social-image{
+    width: 20px;
+    background-color: cyan;
+}
 @media(min-width:768px){
     .main{
         grid-template-columns: 50%;

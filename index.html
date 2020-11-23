@@ -13,17 +13,13 @@
 <div class="grid">
 <div class="grid2">
 <header>
-    <div class="main-header"> 
-        <h2 class="headine">Dashboard</h2>
-        <div class="main-header-search">
-        <input type="search" placeholder="Search..." />
-        </div>
-    <img alt="notifications" class="note" src="icons/icon-bell.svg">
-    <img alt="member 1" class="note" src="images/member-1.jpg">
+    <div class="main-header">
+    <h1>Brendan's app</h1> 
+    <div class="image">
+    <img alt="member 1" class="member" src="images/member-1.jpg">
     Selena Gonzales
-    <div class="alert" id="alert">
-
     </div>
+    <img alt="notifications" class="note" src="icons/icon-bell.svg">
 </div>
 </header>
 </div>
@@ -37,6 +33,13 @@
 </nav>
 </div>
 <div class="grid4">
+    <div class="toolbar"> 
+        <h2 class="headine">Dashboard</h2>
+        <div class="main-header-search">
+        <input type="search" placeholder="Search..." />
+        </div>
+        <div class="alert" id="alert"></div>
+    </div>
 <div class="main">
     <section class="traffic">
         <div class="traffic-header">
@@ -68,9 +71,11 @@
     <canvas id="mobile-chart"></canvas>
 </div>
 </section>
-        <div class="social-container">
+<section class="social">
+        <h3>social stats</h3>
+        <div class="twitter">
             <div class="social-image">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg version="1.1"  class="svg-social" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	    viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
         <path fill="blue" d="M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0
 	    c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,7.8,5.5,5.2,2.2,1.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
@@ -86,9 +91,9 @@
             </div>
         </div>
 
-        <div class="social-container">
+        <div class="google">
             <div class="social-image">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg version="1.1" class="svg-social" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
 <path fill="blue" d="M17.7,25.7c0-0.3,0-0.5-0.1-0.8c-0.1-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.2-0.4-0.3-0.7c-0.2-0.2-0.3-0.4-0.4-0.6
 	c-0.1-0.2-0.3-0.3-0.5-0.6c-0.2-0.2-0.4-0.4-0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.5c-0.3-0.2-0.5-0.4-0.6-0.4s-0.3-0.2-0.6-0.4
@@ -114,9 +119,9 @@
              <p>2,530</p>
          </div>     
      </div>
-        <div class="social-container">
+        <div class="facebook">
         <div class="social-image">
-            <svg enable-background="new 0 0 56.693 56.693" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="blue" d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+            <svg enable-background="new 0 0 56.693 56.693" id="Layer_1" version="1.1" class="svg-social" viewBox="0 0 56.693 56.693" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="blue" d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
         </div>
      <div class="social-text">
         <p>Facebook</p>
@@ -124,7 +129,7 @@
      </div>
  </div>
         <!-- add two more social containers and childelements for other social media items -->
-
+</section>
 <section class="members">
     <h3>new members</h3>
 
@@ -203,7 +208,7 @@
         <h3>message user</h3>
         <form class="widget-container">
             <input type="text" placeholder="Search for user" class="form-field" id="userField">
-            <textarea placeholder="Message for user" class="form-area" id="messagefield"></textarea>
+            <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
             <button class="button-primary" id="send">Send</button>
             </form>
     </section>

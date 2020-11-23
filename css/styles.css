@@ -1,3 +1,9 @@
+.image{
+    float: right;
+}
+h1{
+    float: left;
+}
 .grid{
     display: grid;
     grid-template-columns: 100%;
@@ -21,6 +27,11 @@
 }
 nav{
 }
+.svg-social{
+    stroke-width: 2px;
+    stroke: black;
+    background-color: white;
+}
 .svg{
     height: 40px;
     width: 40px;
@@ -30,11 +41,14 @@ nav{
     width: 40px;
     float: right;
 }
+.member{
+    width: 40px;
+}
 .a{
     float: left;
 }
 .note:hover{
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 .widget-container-full, .widget-container-half{
     width: 95vw;
@@ -46,15 +60,18 @@ nav{
     float: left;
 }
 .main-header-search{
-    float: left;
+    float: right;
 }
 .social-image{
-    width: 20px;
-    background-color: cyan;
+    width: 50%;
 }
 @media(min-width:768px){
     .main{
         grid-template-columns: 50%;
+    }
+    .social{
+        grid-auto-columns: auto;
+        display: grid;
     }
     .widget-container-full{
         width: 90vw;
@@ -65,14 +82,21 @@ nav{
     .traffic, .social{
         grid-column: 1 / span 2;
     }
-    .daily, .members, .message{
+    
+    .daily, .members, .message, .twitter{
         grid-column: 1 / span 1;
     }
-    .mobile, .activity, .settings {
+    .mobile, .activity, .settings, .google{
         grid-column: 2 / span 1;
+    }
+    .facebook{
+        grid-column: 3 / span 1;
     }
     .grid4{
         grid-template-columns: 50%;
+    }
+    .social-image{
+        float: left;
     }
     .grid{
         display: grid;

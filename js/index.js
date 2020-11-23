@@ -105,7 +105,7 @@ let mobileChart = new Chart(mobileCanvas, {
 });
 
 const user = document.getElementById("userField");
-const message = document.getElementById("mesageField");
+const message = document.getElementById("messageField");
 const send = document.getElementById("send");
 
 send.addEventListener('click', () => {
@@ -117,6 +117,6 @@ send.addEventListener('click', () => {
     } else if (message.value === "") {
       alert("Please fill out message field before sending");
     } else {
-      alert("Message successfully sent to: ${user.value}");
+      alert(`Message successfully sent to: ${user.value}`);
     }
 });

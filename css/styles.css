@@ -43,6 +43,7 @@ nav{
 }
 .member{
     width: 40px;
+    border-radius: 25px;
 }
 .a{
     float: left;
@@ -65,6 +66,16 @@ nav{
 .social-image{
     width: 50%;
 }
+.profile-image{
+    border-radius: 100px;
+    height: 25%;
+    width: 25%;
+}
+.members-container, .recent-container{
+    border: 5px solid blue;
+    border-color: blue;
+}
+
 @media(min-width:768px){
     .main{
         grid-template-columns: 50%;

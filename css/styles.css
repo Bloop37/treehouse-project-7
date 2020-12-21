@@ -28,9 +28,12 @@ h1{
 nav{
 }
 .svg-social{
+    width: 50%;
+    margin: auto;
+    display: block; 
     stroke-width: 2px;
-    stroke: black;
-    background-color: white;
+    color: black;
+    padding-top: 25%;
 }
 .svg{
     height: 40px;
@@ -62,18 +65,74 @@ nav{
 }
 .main-header-search{
     float: right;
+
 }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
 .social-image{
-    width: 50%;
+    width: 25%;
+    background-color: lightblue;
+    border-radius: 50%;
 }
+.members-text{
+    float: left;
+}
+.recent-text{
+    float: left;
+}
+.social-image:after {
+    content: "";
+    display: block;
+    padding-bottom: 25%;
+}
+  
 .profile-image{
     border-radius: 100px;
-    height: 25%;
-    width: 25%;
+    height: 10%;
+    width: 10%;
+    float: left;
+    padding-right: 10px;
 }
 .members-container, .recent-container{
     border: 5px solid blue;
     border-color: blue;
+}
+.alert{
+    background-color: blue;
+    color: white;
+}
+.alert-banner-close{
+    float: right;
+}
+.recent-container a{
+    float: right;
+    padding-top: 2em;
+}
+.date{
+    float: right;
+}
+.form-field, .form-area, .button-primary1{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+.on-off{
+    float: left;
+}
+.light{
+    float: left;
+    padding-right: 10px;
+}
+.button-primary2, .button-disabled{
+    width: 40%;
+}
+.settings-button{
+    display: block;
+    margin: auto;
 }
 
 @media(min-width:768px){

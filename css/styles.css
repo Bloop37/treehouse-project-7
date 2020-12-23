@@ -62,10 +62,11 @@ nav{
 }
 .headline{
     float: left;
+    grid-column: 1 / span 1;
 }
 .main-header-search{
     float: right;
-
+    grid-column: 2 / span 1; 
 }
 .clearfix::after {
     content: "";
@@ -87,9 +88,11 @@ nav{
 .social-image:after {
     content: "";
     display: block;
-    padding-bottom: 25%;
+    padding-top: 25%;
 }
-  
+.toolbar{
+    display: grid;
+}
 .profile-image{
     border-radius: 100px;
     height: 10%;
@@ -107,6 +110,17 @@ nav{
 }
 .alert-banner-close{
     float: right;
+    display: grid;
+    grid-column: 2 / span 1;
+    color: white;
+    text-align: right;
+     
+}
+.alert-banner{
+    display: grid;
+}
+.alert-banner p{
+    grid-auto-columns: auto;
 }
 .recent-container a{
     float: right;
@@ -119,20 +133,29 @@ nav{
     width: 90%;
     margin: auto;
     display: block;
+    margin-bottom: 5%;
+}
+.button-primary1, .button-primary2{
+    background-color: blue;
+    color: white;
 }
 .on-off{
     float: left;
+    padding-bottom: 20%;
 }
 .light{
     float: left;
     padding-right: 10px;
+    padding-bottom: 5%;
 }
 .button-primary2, .button-disabled{
+    margin: auto;
     width: 40%;
 }
 .settings-button{
     display: block;
     margin: auto;
+    text-align: center;
 }
 
 @media(min-width:768px){
@@ -152,7 +175,23 @@ nav{
     .traffic, .social{
         grid-column: 1 / span 2;
     }
-    
+    .traffic-nav{
+        text-align: right;
+    }
+    .traffic-nav-link{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .active{
+        background-color: green;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .traffic-nav li{
+        float: right;
+        list-style-type: none;
+    }
     .daily, .members, .message, .twitter{
         grid-column: 1 / span 1;
     }

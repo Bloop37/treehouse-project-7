@@ -43,10 +43,12 @@ nav{
     height: 40px;
     width: 40px;
     float: right;
+    margin-left: -10px;
 }
 .member{
     width: 40px;
     border-radius: 25px;
+    margin-left: 10px;
 }
 .a{
     float: left;
@@ -68,6 +70,25 @@ nav{
     float: right;
     grid-column: 2 / span 1; 
 }
+.main-header{
+    display: grid;
+}
+.headerleft{
+    grid-column: 1 / span 1;
+}
+.headerright{
+    grid-column: 2 / span 1;
+    line-height: 2em;
+    padding-top: 1em;
+}
+.empty{
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: green;
+    float: right;
+    margin-left: -20px;
+}
 .clearfix::after {
     content: "";
     clear: both;
@@ -78,6 +99,10 @@ nav{
     width: 25%;
     background-color: lightblue;
     border-radius: 50%;
+}
+.name{
+    position: relative;
+    top: -1em;
 }
 .members-text{
     float: left;
